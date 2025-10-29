@@ -26,7 +26,7 @@ Este proyecto está construido con la pila de tecnologías de Microsoft y los si
 
 La solución sigue una arquitectura organizada y fácil de mantener:
 
-| Carpeta | 
+| Carpeta | Responsabilidad | Descripción |
 | :--- | :--- | :--- |
 | `Controllers/` | **Presentación** | Maneja las peticiones HTTP y las dirige a la lógica de negocio. |
 | `Repository/` | **Lógica de Datos** | Implementación del Patrón Repositorio para operaciones CRUD. |
@@ -36,27 +36,27 @@ La solución sigue una arquitectura organizada y fácil de mantener:
 
 ## 🌐 Endpoints de la API: Servicios y Consultas
 Empleados (/api/Empleados) 🧑‍💼: 
- - GET /TodosLosEmpleados: Retorna la lista completa de todos los empleados en Northwind.
+* GET /TodosLosEmpleados: Retorna la lista completa de todos los empleados en Northwind.
 
-- GET /CantidadEmpleados: Indica el conteo total de empleados registrados en el sistema.
+* GET /CantidadEmpleados: Indica el conteo total de empleados registrados en el sistema.
 
-- GET /EmpleadoPorID?empleadoID={id}: Permite buscar un empleado específico utilizando su ID.
+* GET /EmpleadoPorID?empleadoID={id}: Permite buscar un empleado específico utilizando su ID.
 
-- GET /EmpleadosPorNombre?nombreEmpleado={nombre}: Devuelve empleados cuyos nombres o apellidos contienen la cadena de texto proporcionada.
+* GET /EmpleadosPorNombre?nombreEmpleado={nombre}: Devuelve empleados cuyos nombres o apellidos contienen la cadena de texto proporcionada.
 
-- GET /IDempleadoPorTitulo?titulo={titulo}: Recupera al empleado que ocupa el cargo o título especificado.
+* GET /IDempleadoPorTitulo?titulo={titulo}: Recupera al empleado que ocupa el cargo o título especificado.
 
-- GET /EmpleadoPorPais?country={país}: Obtiene una instancia de un empleado que resida en el país indicado.
+* GET /EmpleadoPorPais?country={país}: Obtiene una instancia de un empleado que resida en el país indicado.
 
-- GET /TodosLosEmpleadosPorPais?country={país}: Lista todos los empleados que trabajan desde el país especificado.
+* GET /TodosLosEmpleadosPorPais?country={país}: Lista todos los empleados que trabajan desde el país especificado.
 
-- GET /ElEmpleadoMasGrande: Identifica al empleado con la mayor edad (basado en la fecha de nacimiento).
+* GET /ElEmpleadoMasGrande: Identifica al empleado con la mayor edad (basado en la fecha de nacimiento).
 
-- GET /CantidadEmpleadosPorTitulos: Muestra la distribución de empleados agrupados por su tipo de cargo.
+* GET /CantidadEmpleadosPorTitulos: Muestra la distribución de empleados agrupados por su tipo de cargo.
 
 Productos (/api/Productos) 📦: 
-GET /ObtenerProductosConCategoria: Lista todos los productos y muestra el nombre de su categoría relacionada.
+* GET /ObtenerProductosConCategoria: Lista todos los productos y muestra el nombre de su categoría relacionada.
 
-GET /ObtenerProductosQueContienen?palabra={palabra}: Filtra los productos cuyos nombres incluyen la palabra clave dada (búsqueda parcial).
+* GET /ObtenerProductosQueContienen?palabra={palabra}: Filtra los productos cuyos nombres incluyen la palabra clave dada (búsqueda parcial).
 ---
 
